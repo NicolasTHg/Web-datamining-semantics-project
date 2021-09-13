@@ -5,11 +5,11 @@ Objective : Make a Web application that integrates geospatial data from multiple
 ## Choice of datasets for static data
 My goal is to make a web application where users can enter a location (city, address) and display different buildings around them on a map.
 I choose these 3 datasets, from open data source for my static data, which contains data of different buildings. 
-Higher Education Libraries 
+- Higher Education Libraries 
 (https://www.data.gouv.fr/fr/datasets/bibliotheques-de-lenseignement-superieur/#_)
-Postal Contact Points (Merchant Post Relays, Post Offices and Postal Agencies)
+- Postal Contact Points (Merchant Post Relays, Post Offices and Postal Agencies)
 (https://data.iledefrance.fr/explore/dataset/les_bureaux_de_poste_et_agences_postales_en_idf)
-Public Libraries
+- Public Libraries
 (https://data.culturecommunication.gouv.fr/explore/dataset/adresses-des-bibliotheques-publiques)
 
  
@@ -17,7 +17,7 @@ Public Libraries
 In this part, I will present the different functionalities of our web application, made via  HTML, CSS and Javascript files.
 To display a map, I use Leaflet (https://leafletjs.com/).
 Here’s the interface of our web application.
- ![image](https://user-images.githubusercontent.com/74919761/133118951-0e0499b6-918e-443f-8002-ecc347e6dd1a.png)
+![image](https://user-images.githubusercontent.com/74919761/133118951-0e0499b6-918e-443f-8002-ecc347e6dd1a.png)
 
 
 •	First Functionality : Select a city and the type of buildings you want to see on the map
