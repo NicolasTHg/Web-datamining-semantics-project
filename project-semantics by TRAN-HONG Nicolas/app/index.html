@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel='stylesheet' href='index.css'/>
+    <title>App by TRAN-HONG Nicolas</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha256-EFpFyBbuttUJtoocYzsBnERPWee2JYz4cn5nkUBjW0A=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha256-IqiRR5X1QtAdcq5lG4vBB1/WxwrRCkkjno4pfvWyag0=" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">
+      <form id="formcity" class="formcity" onsubmit="clickOnSubmitButton();return false;">
+        <div class="form">
+          <label for="city">Select a city: </label>
+          <select name="city" id="city"></select>
+        </div>
+        <div class="form">
+          <input type="checkbox" name="postrelay" id="postrelay">
+          <label for="postrelay" style="color:green">Merchant Post Relay</label>
+          <input type="checkbox" name="postoffice" id="postoffice">
+          <label for="postoffice" style="color:red" >Post Office</label>
+          <input type="checkbox" name="postalagency" id="postalagency">
+          <label for="postalagency" style="color:orange">Postal Agency</label>
+        </div>
+        <div class="form">
+          <input type="checkbox" name="publiclibrary" id="publiclibrary">
+          <label for="publiclibrary" style="color:blue">Public Library</label>
+          <input type="checkbox" name="highereducationlibrary" id="highereducationlibrary">
+          <label for="highereducationlibrary" style="color:purple">Higher Education Library</label>
+        </div>
+        <div class="form">
+          <input type="submit" id="submitbutton" value="Submit">
+        </div>
+      </form>
+      </div>
+      <div class="col">
+      <form id="formadress" class="formadress" onsubmit="clickOnSubmitButtonAdress();return false;">
+        <div class="form">
+          <label for="adress">Enter an adress: </label>
+          <input type="text" name="adress" id="adress" size="50"></select>
+        </div>
+        <div class="form">
+          <input type="submit" id="submitadress" value="Submit">
+        </div>
+      </form>
+      </div>
+      <div class="col">
+        <h2>   Weather   </h2>
+        <span id="weather">...</span>
+      </div>
+      <div class="col">
+        <h2>   Air quality   </h2>
+        <span id="aqi">...</span>
+      </div>
+    </div>
+    <div class="row">
+      <div id="mapid"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

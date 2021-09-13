@@ -1,0 +1,61 @@
+#mapid { height: 500px; }
+
+
+.row > .col {
+  display: table-cell;
+  flex: 1;
+  padding: 10px;
+  border: solid;
+}
+
+span {
+    font-size:20px;
+    padding:10px;
+    display:inline-block;
+}
+
+form.formcity {
+    display: table;
+}
+
+div.form {
+    display: table-row;
+}
+
+input {
+    margin: .4rem;
+}
+
+label.city {
+  display: table-cell;
+}
+
+input.formcity {
+    margin-bottom: 10px;
+}
+
+
+/* The alert message box */
+.alert {
+ padding: 20px;
+ background-color: orange;
+ color: white;
+ margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+ margin-left: 15px;
+ color: white;
+ font-weight: bold;
+ float: right;
+ font-size: 22px;
+ line-height: 20px;
+ cursor: pointer;
+ transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+ color: black;
+}
